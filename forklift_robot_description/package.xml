@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>forklift_robot_description</name>
+  <version>0.0.1</version>
+  <description>
+    3D model of a simple forklift
+  </description>
+  <maintainer email="renan028@gmail.com">Renan Freitas</maintainer>
+  <license>Apache 2.0</license>
+  <author email="renan028@gmail.com">Renan Freitas</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>rviz</run_depend>
+  <run_depend>transmission_interface</run_depend>
+  <run_depend>xacro</run_depend>
+
+  <export>
+    <architecture_independent/>
+  </export>
+</package>

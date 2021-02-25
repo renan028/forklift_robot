@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>forklift_robot</name>
+  <version>0.0.1</version>
+  <description>
+    Autonomous forklift package
+  </description>
+  <maintainer email="renan028@gmail.com">
+    Renan Freitas
+  </maintainer>
+  <license>Apache 2.0</license>
+  <author email="renan028@gmail.com">Name</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>forklift_robot_description</run_depend>
+
+  <export>
+    <architecture_independent/>
+    <metapackage/>
+  </export>
+</package>
