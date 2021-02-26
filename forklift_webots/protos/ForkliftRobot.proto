@@ -14,6 +14,8 @@ PROTO ForkliftRobot [
   field  SFBool      supervisor      FALSE            # Is `Robot.supervisor`.
   field  SFBool      synchronization TRUE             # Is `Robot.synchronization`.
   field  SFBool      selfCollision   FALSE            # Is `Robot.selfCollision`.
+  field  MFNode      lidarSlot        []              # Extends the robot with a lidar sensor (such as Sick TIM551 or Hokuyo URG 04LX_UG01 for example).
+  field  MFNode      cameraSlot       []              # Extends the robot with a camera
 ]
 {
   Robot {
@@ -34,6 +36,24 @@ PROTO ForkliftRobot [
           }
         ]
       }
+      DEF CAMERA Transform {
+        translation 0.35 0 2
+        rotation 0.577 -0.577 -0.577 2.09
+        children IS cameraSlot
+      }
+      DEF LIDAR Transform {
+        translation 1.17 0 0.08
+        rotation 0.577 -0.577 -0.577 2.09
+        children IS lidarSlot
+      }
+      Accelerometer {
+      }
+      InertialUnit {
+      	rotation 0 1 0 1.5708
+	    name "imu"
+      }
+      Gyro {
+      }
       SliderJoint {
         jointParameters JointParameters {
           axis 0.000000 0.000000 1.000000
@@ -52,7 +72,7 @@ PROTO ForkliftRobot [
           }
         ]
         endPoint Solid {
-          translation 1.079500 -0.368600 0.000000
+          translation 1.079500 -0.368600 0.00
           rotation 1.000000 0.000000 0.000000 0.000000
           children [
             ForkliftRobot_fork_0Mesh {
