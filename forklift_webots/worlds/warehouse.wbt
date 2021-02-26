@@ -1,0 +1,174 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  title "Warehouse"
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.9990347863136584 -0.040351507747144244 0.017356599832772324 1.0220014142741571
+  position 1.4016618180482934 45.79628456356238 26.439894940466477
+}
+Floor {
+  size 20 20
+  tileSize 5 5
+  appearance Parquetry {
+    type "light strip"
+    colorOverride 0.32549 0.329412 0.329412
+    IBLStrength 3
+  }
+}
+Door {
+  hidden translation_5 9.334447104158983e-09 -6.661338147750939e-16 0.0010000610811234378
+  hidden rotation_5 0 -1 0 6.664001874625056e-08
+  translation -5.91 0 -3.18
+  rotation 0 1 0 3.14159
+  size 2 5 0.2
+  position -6.435588034787382e-08
+}
+Pedestrian {
+  translation 0 1.27 -6.12
+}
+Pedestrian {
+  translation -8.3359 1.27 -7.1159
+  rotation 0 1 0 0.785398
+  name "pedestrian(1)"
+}
+Pedestrian {
+  translation 1.95338 1.27 3.17337
+  rotation 0 1 0 0.785398
+  name "pedestrian(2)"
+}
+Table {
+  translation 0 0 -5.01
+}
+Table {
+  translation -7.63597 0 -6.51597
+  rotation 0 1 0 0.785398
+  name "table(1)"
+}
+Table {
+  translation 2.61677 0 3.73676
+  rotation 0 1 0 0.785398
+  name "table(2)"
+}
+WoodenBox {
+  translation 0 0.3 -4.66
+}
+WoodenBox {
+  translation -7.54 0.3 -8.01
+  name "wooden box(1)"
+}
+WoodenBox {
+  translation 3.13 0.3 4.28
+  name "wooden box(2)"
+}
+WoodenBox {
+  translation 8.75 0.3 -8.58
+  name "wooden box(3)"
+}
+WoodenBox {
+  translation 8.75 0.3 -7.7
+  name "wooden box(4)"
+}
+WoodenBox {
+  translation 7.94 0.3 -7.7
+  name "wooden box(5)"
+}
+WoodenBox {
+  translation 7.94 0.3 -4.21
+  name "wooden box(6)"
+}
+WoodenBox {
+  translation 9.31 0.3 -1.29
+  name "wooden box(7)"
+}
+WoodenBox {
+  translation -2.12 0.3 -1.29
+  name "wooden box(8)"
+}
+WoodenBox {
+  translation -1.46 0.3 -1.29
+  name "wooden box(9)"
+}
+WoodenBox {
+  translation -1.46 0.3 -0.54
+  name "wooden box(10)"
+}
+ForkliftRobot {
+  translation 1.44 0 0
+}
+WoodenBox {
+  translation -9.19 0.3 -0.5
+  name "wooden box(11)"
+}
+WoodenBox {
+  translation -8.44 0.3 -0.5
+  name "wooden box(12)"
+}
+Wall {
+  translation -8.37 0 -3.18
+  name "wall(4)"
+  size 3 5 0.2
+}
+Wall {
+  translation -4.84 0 -6.58
+  rotation 0 1 0 1.5708
+  name "wall(5)"
+  size 7 5 0.2
+}
+Ceiling {
+  translation 0 5 0
+  size 20 20
+  appearance Roughcast {
+    colorOverride 0.74902 0.74902 0.74902
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+  }
+}
+Wall {
+  translation 10 0 0
+  rotation 0 1 0 1.57
+  size 20 5 0.2
+}
+Wall {
+  translation -10 0 0
+  rotation 0 1 0 1.57
+  name "wall(1)"
+  size 20 5 0.2
+}
+Wall {
+  translation 0 0 -10
+  rotation 0 1 0 3.14
+  name "wall(2)"
+  size 20 5 0.2
+}
+Wall {
+  translation 0 0 10
+  rotation 0 1 0 3.14
+  name "wall(3)"
+  size 20 5 0.2
+}
+WoodenPallet {
+  translation 8.16 0 0
+}
+WoodenPallet {
+  translation 8.16 0 -1.45
+  name "wooden pallet(1)"
+}
+WoodenPallet {
+  translation 8.16 0 -2.88
+  name "wooden pallet(2)"
+}
+WoodenPallet {
+  translation 8.16 0 1.55
+  name "wooden pallet(3)"
+}
+DoubleFluorescentLamp {
+  translation 0 5 0
+  rotation 1 0 0 3.14
+}
+Background {
+  skyColor [
+    1 1 1
+  ]
+}
