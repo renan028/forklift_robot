@@ -1,4 +1,4 @@
-#VRML_SIM R2020b utf8
+#VRML_SIM R2021a utf8
 # license: Apache License 2.0
 # license url: http://www.apache.org/licenses/LICENSE-2.0
 # tags: hidden
@@ -9,7 +9,7 @@ PROTO ForkliftRobot_base_link_0Mesh [
 {
   Shape {
     appearance PBRAppearance {
-      baseColor 0.500000 0.500000 0.500000
+      baseColor 1 0.68 0
       transparency 0.000000
       roughness 1.000000
       metalness 0

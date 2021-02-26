@@ -71,11 +71,12 @@ PROTO ForkliftRobot [
           }
           physics Physics {
             density -1
-            mass 100.000000
+            mass 5
             inertiaMatrix [
               2.000000e-01 3.000000e-01 4.000000e-01
               0.000000e+00 0.000000e+00 0.000000e+00
             ]
+            centerOfMass 0 0 0
           }
         }
       }
@@ -122,11 +123,12 @@ PROTO ForkliftRobot [
           }
           physics Physics {
             density -1
-            mass 5.000000
+            mass 5
             inertiaMatrix [
               1.000000e-03 1.500000e-03 1.000000e-03
               0.000000e+00 0.000000e+00 0.000000e+00
             ]
+            centerOfMass 0 0 0
           }
         }
       }
@@ -173,11 +175,12 @@ PROTO ForkliftRobot [
           }
           physics Physics {
             density -1
-            mass 5.000000
+            mass 5
             inertiaMatrix [
               1.000000e-03 1.500000e-03 1.000000e-03
               0.000000e+00 0.000000e+00 0.000000e+00
             ]
+            centerOfMass 0 0 0
           }
         }
       }
@@ -224,11 +227,12 @@ PROTO ForkliftRobot [
           }
           physics Physics {
             density -1
-            mass 5.000000
+            mass 5
             inertiaMatrix [
               1.000000e-03 1.500000e-03 1.000000e-03
               0.000000e+00 0.000000e+00 0.000000e+00
             ]
+            centerOfMass 0 0 0
           }
         }
       }
@@ -275,11 +279,12 @@ PROTO ForkliftRobot [
           }
           physics Physics {
             density -1
-            mass 5.000000
+            mass 5
             inertiaMatrix [
               1.000000e-03 1.500000e-03 1.000000e-03
               0.000000e+00 0.000000e+00 0.000000e+00
             ]
+            centerOfMass 0 0 0
           }
         }
       }
@@ -296,11 +301,12 @@ PROTO ForkliftRobot [
     }
     physics Physics {
       density -1
-      mass 500.000000
+      mass 500
       inertiaMatrix [
         2.060000e+02 3.890000e+02 3.160000e+02
         0.000000e+00 -2.300000e+01 0.000000e+00
       ]
+      centerOfMass 0 0 0
     }
   }
 }
