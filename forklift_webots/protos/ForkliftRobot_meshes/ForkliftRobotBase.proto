@@ -4,7 +4,7 @@
 # tags: hidden
 # Extracted from: urdf/forklift_robot.urdf
 
-PROTO ForkliftRobot_base_link_0Mesh [
+PROTO ForkliftRobotBase [
 ]
 {
   Shape {

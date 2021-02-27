@@ -170,7 +170,6 @@ DoubleFluorescentLamp {
   rotation 1 0 0 3.14
 }
 ForkliftRobot {
-
   lidarSlot [
     Lidar {
       name "Hokuyo_URG_04LX_UG01"
