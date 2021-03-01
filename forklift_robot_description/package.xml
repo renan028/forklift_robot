@@ -1,23 +1,16 @@
 <?xml version="1.0"?>
-<package>
+<package format="3">
   <name>forklift_robot_description</name>
   <version>0.0.1</version>
-  <description>
-    3D model of a simple forklift
-  </description>
-  <maintainer email="renan028@gmail.com">Renan Freitas</maintainer>
-  <license>Apache 2.0</license>
-  <author email="renan028@gmail.com">Renan Freitas</author>
+  <description> 3D model of a simple forklift </description>
+  <maintainer email="renan028@gmail.com"> </maintainer>
+  <author>Renan Freitas</author>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <license>Apache License 2.0</license>
 
-  <run_depend>joint_state_publisher</run_depend>
-  <run_depend>robot_state_publisher</run_depend>
-  <run_depend>rviz</run_depend>
-  <run_depend>transmission_interface</run_depend>
-  <run_depend>xacro</run_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
   <export>
-    <architecture_independent/>
+    <build_type>ament_cmake</build_type>
   </export>
 </package>
