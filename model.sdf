@@ -62,25 +62,21 @@
     </link>
 
     <link name="wheel_back_left">
+      <pose>-0.9897 -0.5334 0 0 0 0</pose>
       <visual name="wheel_back_left">
-        <pose>-0.9897 -0.5334 0 0 0 0</pose>
         <geometry>
           <mesh>
             <uri>model://forklift/meshes/wheel.dae</uri>
           </mesh>
         </geometry>
       </visual>
-      <!--
       <collision name="wheel_back_left_collision">
-        <pose>-0.1 0 -0.1 1.571 0 0</pose>
         <geometry>
-          <cylinder>
-            <length>0.2</length>
-            <radius>0.21</radius>
-          </cylinder>
+          <mesh>
+            <uri>model://forklift/meshes/wheel.dae</uri>
+          </mesh>
         </geometry>
       </collision>
-      -->
       <inertial>
         <mass>5</mass>
         <inertia> 
@@ -95,25 +91,21 @@
     </link>
 
     <link name="wheel_back_right">
+      <pose>-0.9897 0.3302 0 0 0 0</pose>
       <visual name="wheel_back_right">
-        <pose>-0.9897 0.3302 0 0 0 0</pose>
         <geometry>
           <mesh>
             <uri>model://forklift/meshes/wheel.dae</uri>
           </mesh>
         </geometry>
       </visual>
-      <!--
       <collision name="wheel_back_right_collision">
-        <pose>0 0 0 1.571 0 0</pose>
         <geometry>
-          <cylinder>
-            <length>0.2</length>
-            <radius>0.21</radius>
-          </cylinder>
+          <mesh>
+            <uri>model://forklift/meshes/wheel.dae</uri>
+          </mesh>
         </geometry>
       </collision>
-      -->
       <inertial>
         <mass>5</mass>
         <inertia> 
@@ -128,25 +120,21 @@
     </link>
 
     <link name="wheel_front_left">
+      <pose>0.469 -0.5334 0 0 0</pose>
       <visual name="wheel_front_left">
-        <pose>0.469 -0.5334 0 0 0</pose>
         <geometry>
           <mesh>
             <uri>model://forklift/meshes/wheel.dae</uri>
           </mesh>
         </geometry>
       </visual>
-      <!--
       <collision name="wheel_front_left_collision">
-        <pose>0 0 0 1.571 0 0</pose>
         <geometry>
-          <cylinder>
-            <length>0.2</length>
-            <radius>0.21</radius>
-          </cylinder>
+          <mesh>
+            <uri>model://forklift/meshes/wheel.dae</uri>
+          </mesh>
         </geometry>
       </collision>
-      -->
       <inertial>
           <mass>5</mass>
           <inertia> 
@@ -161,25 +149,21 @@
     </link>
 
     <link name="wheel_front_right">
+      <pose>0.469 0.3302 0 0 0</pose>
       <visual name="wheel_front_right">
-        <pose>0.469 0.3302 0 0 0</pose>
         <geometry>
           <mesh>
             <uri>model://forklift/meshes/wheel.dae</uri>
           </mesh>
         </geometry>
       </visual>
-      <!--
       <collision name="wheel_front_right_collision">
-        <pose>0 0 0 1.571 0 0</pose>
         <geometry>
-          <cylinder>
-            <length>0.2</length>
-            <radius>0.21</radius>
-          </cylinder>
+          <mesh>
+            <uri>model://forklift/meshes/wheel.dae</uri>
+          </mesh>
         </geometry>
       </collision>
-      -->
       <inertial>
         <mass>5</mass>
         <inertia> 
@@ -208,16 +192,15 @@
     </joint>
 
 
-    <joint name="back_left_wheel_hinge" type="continuous">
+    <joint name="back_left_wheel_hinge" type="revolute">
       <parent>base_link</parent>
       <child>wheel_back_left</child>
-      <pose>0 0 0 0 0 0</pose>
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
     </joint>
 
-    <joint name="back_right_wheel_hinge" type="continuous">
+    <joint name="back_right_wheel_hinge" type="revolute">
       <parent>base_link</parent>
       <child>wheel_back_right</child>
       <pose>0 0 0 0 0 0</pose>
@@ -226,7 +209,7 @@
       </axis>
     </joint>
 
-    <joint name="left_wheel_hinge" type="continuous">
+    <joint name="left_wheel_hinge" type="revolute">
       <parent>base_link</parent>
       <child>wheel_front_left</child>
       <pose>0 0 0 0 0 0</pose>
@@ -235,7 +218,7 @@
       </axis>
     </joint>
 
-    <joint name="right_wheel_hinge" type="continuous">
+    <joint name="right_wheel_hinge" type="revolute">
       <parent>base_link</parent>
       <child>wheel_front_right</child>
       <pose>0 0 0 0 0 0</pose>
