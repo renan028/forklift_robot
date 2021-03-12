@@ -2,8 +2,8 @@
 <sdf version='1.4'>
   <model name="forklift">
     <link name="base_link">
+      <pose>-1.0795 -0.5334 0 0 0 0</pose>
       <visual name="base_link_visual">
-        <pose>-1.0795 -0.5334 0 0 0 0</pose>
         <geometry>
           <mesh>
             <uri>model://forklift/meshes/base_link.dae</uri> 
@@ -32,8 +32,8 @@
     </link>
   
     <link name="fork">
+      <pose>1.0795 -0.368600 1 0 0 0</pose>
       <visual name="fork_visual">
-        <pose>1.0795 -0.368600 1 0 0 0</pose>
         <geometry>
           <mesh>
             <uri>model://forklift/meshes/fork.dae</uri> 
@@ -41,7 +41,6 @@
         </geometry>
       </visual>
       <collision name="fork_collision">
-        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <uri>model://forklift/meshes/fork.dae</uri> 
@@ -128,6 +127,7 @@
     </link>
 
     <link name="wheel_front_left">
+      <pose>0.469 -0.5334 0 0 0 0</pose>
       <visual name="wheel_front_left">
         <pose>0.469 -0.5334 0 0 0</pose>
         <geometry>
@@ -220,7 +220,6 @@
     <joint name="back_right_wheel_hinge" type="continuous">
       <parent>base_link</parent>
       <child>wheel_back_right</child>
-      <pose>0 0 0 0 0 0</pose>
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
@@ -229,7 +228,6 @@
     <joint name="left_wheel_hinge" type="continuous">
       <parent>base_link</parent>
       <child>wheel_front_left</child>
-      <pose>0 0 0 0 0 0</pose>
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
@@ -238,7 +236,6 @@
     <joint name="right_wheel_hinge" type="continuous">
       <parent>base_link</parent>
       <child>wheel_front_right</child>
-      <pose>0 0 0 0 0 0</pose>
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
