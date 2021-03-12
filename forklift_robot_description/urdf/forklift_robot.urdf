@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <robot name="forklift_robot">
   <link name="base_link">
-    <origin xyz="-1.0795 -0.5334 0" rpy="0 0 0" />
     <visual>
+      <origin xyz="-1.0795 -0.5334 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://forklift_robot_description/meshes/base_link.dae"/> 
       </geometry>
@@ -20,7 +20,6 @@
   </link>
   
   <link name="fork">
-    <origin xyz="1.0795 -0.368600 1" rpy="0 0 0" />
     <visual>
       <geometry>
         <mesh filename="package://forklift_robot_description/meshes/fork.dae"/> 
@@ -38,15 +37,16 @@
   </link>
 
   <link name="wheel_back_left">
-    <origin xyz="-0.9897 -0.5334 0" rpy="0 0 0" />
     <visual>
+      <origin xyz="-0.2032 0 -0.2032" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://forklift_robot_description/meshes/wheel.dae"/> 
       </geometry>
     </visual>
     <collision>
+      <origin xyz="0 0.1 0" rpy="1.571 0 0" />
       <geometry>
-        <mesh filename="package://forklift_robot_description/meshes/wheel.dae"/> 
+        <cylinder length="0.2" radius="0.21"/> 
       </geometry>
     </collision>
     <inertial>
@@ -56,15 +56,16 @@
   </link>
   
   <link name="wheel_back_right">
-    <origin xyz="-0.9897 0.3302 0" rpy="0 0 0" />
     <visual>
+      <origin xyz="-0.2032 0 -0.2032" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://forklift_robot_description/meshes/wheel.dae"/> 
       </geometry>
     </visual>
     <collision>
+      <origin xyz="0 0.1 0" rpy="1.571 0 0" />
       <geometry>
-        <mesh filename="package://forklift_robot_description/meshes/wheel.dae"/> 
+        <cylinder length="0.2" radius="0.21"/> 
       </geometry>
     </collision>
     <inertial>
@@ -74,15 +75,16 @@
   </link>
   
   <link name="wheel_front_left">
-    <origin xyz="0.469 -0.5334 0" rpy="0 0 0" />
     <visual>
+      <origin xyz="-0.2032 0 -0.2032" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://forklift_robot_description/meshes/wheel.dae"/> 
       </geometry>
     </visual>
     <collision>
+      <origin xyz="0 0.1 0" rpy="1.571 0 0" />
       <geometry>
-        <mesh filename="package://forklift_robot_description/meshes/wheel.dae"/> 
+        <cylinder length="0.2" radius="0.21"/> 
       </geometry>
     </collision>
     <inertial>
@@ -92,15 +94,16 @@
   </link>
   
   <link name="wheel_front_right">
-    <origin xyz="0.469 0.3302 0" rpy="0 0 0" />
     <visual>
+      <origin xyz="-0.2032 0 -0.2032" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://forklift_robot_description/meshes/wheel.dae"/> 
       </geometry>
     </visual>
     <collision>
+      <origin xyz="0 0.1 0" rpy="1.571 0 0" />
       <geometry>
-        <mesh filename="package://forklift_robot_description/meshes/wheel.dae"/> 
+        <cylinder length="0.2" radius="0.21"/> 
       </geometry>
     </collision>
     <inertial>
@@ -118,46 +121,51 @@
       velocity="0.1"
       effort="100"
     />
+    <origin xyz="1.0795 -0.3686 0.0"/>
     <axis xyz="0 0 1"/>
   </joint>
 
-  <joint name="base_to_wheel_back_left" type="revolute">
+  <joint name="base_to_wheel_back_left" type="continuous">
     <parent link="base_link"/>
     <child link="wheel_back_left"/>
     <limit 
       velocity="10"
       effort="1000"
     />
+    <origin xyz="-0.7865 -0.5334 0.2032"/>
     <axis xyz="0 1 0"/>
   </joint>
 
-  <joint name="base_to_wheel_back_right" type="revolute">
+  <joint name="base_to_wheel_back_right" type="continuous">
     <parent link="base_link"/>
     <child link="wheel_back_right"/>
     <limit 
       velocity="10"
       effort="1000"
     />
+    <origin xyz="-0.7502 0.3302 0.2032"/>
     <axis xyz="0 1 0"/>
   </joint>
 
-  <joint name="base_to_wheel_front_left" type="revolute">
+  <joint name="base_to_wheel_front_left" type="continuous">
     <parent link="base_link"/>
     <child link="wheel_front_left"/>
     <limit 
       velocity="10"
       effort="1000"
     />
+    <origin xyz="0.6722 0.3302 0.2032"/>
     <axis xyz="0 1 0"/>
   </joint>
 
-  <joint name="base_to_wheel_front_right" type="revolute">
+  <joint name="base_to_wheel_front_right" type="continuous">
     <parent link="base_link"/>
     <child link="wheel_front_right"/>
     <limit 
       velocity="10"
       effort="1000"
     />
+    <origin xyz="0.6722 -0.5334 0.2032"/>
     <axis xyz="0 1 0"/>
   </joint>
 
