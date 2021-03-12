@@ -1,22 +1,18 @@
 <?xml version="1.0"?>
-<package>
+<package format="3">
   <name>forklift_robot</name>
   <version>0.0.1</version>
-  <description>
-    Autonomous forklift package
-  </description>
-  <maintainer email="renan028@gmail.com">
-    Renan Freitas
-  </maintainer>
-  <license>Apache 2.0</license>
-  <author email="renan028@gmail.com">Name</author>
+  <description> Autonomous forklift package </description>
+  <maintainer email="renan028@gmail.com"></maintainer>
+  <author>Renan Freitas</author>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <license>Apache License 2.0</license>
 
-  <run_depend>forklift_robot_description</run_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>forklift_robot_description</depend>
 
   <export>
-    <architecture_independent/>
-    <metapackage/>
+    <build_type>ament_cmake</build_type>
   </export>
 </package>
